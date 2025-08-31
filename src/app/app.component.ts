@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-course';
+      data = {
+        title : '<h1>angular core deep dive</h1><script>alert("Attack")</script>'
+      }
+      onLogoClicked(){
+      alert("HelloWelcomeTomyProject");
+      }
+      EventContoller(newTitle:string){
+        // console.log(console.log(newTitle));
+
+        this.data.title=newTitle;
+      }
+
 }
